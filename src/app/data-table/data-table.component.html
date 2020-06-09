@@ -1,0 +1,77 @@
+<mat-card>
+  <h1>Üzemóra és fogyasztás</h1>
+  <mat-icon class="icon" (click)="downloadTable()">get_app</mat-icon>
+
+ 
+
+    <table mat-table matSort aria-label="Elements">
+      
+      <!-- Position Column -->
+      <ng-container matColumnDef="Időszak" >
+        <th mat-header-cell *matHeaderCellDef> Időszak </th>
+        
+        <td mat-cell *matCellDef="let element" > 
+          <ng-container *ngIf="period === '_3' ">{{ element.date.substring(0,4) }} </ng-container>
+          <ng-container *ngIf="period === '_2' ">{{ getmonth(element.date.substring(5,7)) }} </ng-container>
+          <ng-container *ngIf="period !== '_2' && period !== '_3'">{{ element.date }} </ng-container>
+        </td>
+      </ng-container>
+      
+      <!-- Name Column -->
+      <ng-container matColumnDef="Fogyasztás">
+        <th mat-header-cell *matHeaderCellDef> Fogyasztás </th>
+        <td mat-cell *matCellDef="let element"> {{element.consumption}} </td>
+      </ng-container>
+      
+      <!-- Weight Column -->
+      <ng-container matColumnDef="Meddő-energia">
+        <th mat-header-cell *matHeaderCellDef> Meddő energia </th>
+        <td mat-cell *matCellDef="let element"> {{element.energy}} </td>
+      </ng-container>
+      
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="Üzemóra">
+        <th mat-header-cell *matHeaderCellDef> Üzemóra </th>
+        <td mat-cell *matCellDef="let element"> {{element.runTime}} </td>
+      </ng-container>
+      
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="Üzemszünet">
+        <th mat-header-cell *matHeaderCellDef> Üzemszünet </th>
+        <td mat-cell *matCellDef="let element"> {{element.stopped}} </td>
+      </ng-container>
+      
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="Max-teljesítmény">
+        <th mat-header-cell *matHeaderCellDef> Max teljesítmény </th>
+        <td mat-cell *matCellDef="let element"> {{element.maxOutput}} </td>
+      </ng-container>
+      
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="Termelés">
+        <th mat-header-cell *matHeaderCellDef> Termelés </th>
+        <td mat-cell *matCellDef="let element"> {{element.production}} </td>
+      </ng-container>
+      
+      <!-- Symbol Column -->
+      <ng-container matColumnDef="Bevétel">
+        <th mat-header-cell *matHeaderCellDef> Bevétel </th>
+        <td mat-cell *matCellDef="let element"> {{element.income}} </td>
+      </ng-container>
+      
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      
+    </table>
+
+
+  
+
+  
+  <mat-paginator #paginator
+      [length]="dataSource?.data.length"
+      [pageIndex]="0"
+      [pageSize]="30"
+      >
+  </mat-paginator>
+</mat-card>

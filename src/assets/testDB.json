@@ -1,0 +1,104 @@
+[   
+    {
+       "date": "2020/06/01",
+       "consumption": "3.2 kWh",
+       "energy": "38/0 kVArh",
+       "runTime": 9,
+       "stopped": "-",
+       "maxOutput": "483.5 kW",
+       "production": "2190 kWh",
+       "income": "96 994.71 Ft"
+    },   
+    {
+       "date": "2020/06/02",
+       "consumption": "5.2 kWh",
+       "energy": "47.1 kVArh",
+       "runTime": 10,
+       "stopped": "-",
+       "maxOutput": "497.1 kW",
+       "production": "1940 kWh",
+       "income": "84 247.26 Ft"
+    },   
+    {
+       "date": "2020/06/03",
+       "consumption": "5.1 kWh",
+       "energy": "36/0 kVArh",
+       "runTime": 12,
+       "stopped": "-",
+       "maxOutput": "453.3 kW",
+       "production": "2749 kWh",
+       "income": "65 828.22 Ft"
+    },   
+    {
+       "date": "2020/06/04",
+       "consumption": "5.7 kWh",
+       "energy": "21.9 kVArh",
+       "runTime": 15,
+       "stopped": "-",
+       "maxOutput": "447.9 kW",
+       "production": "1871 kWh",
+       "income": "92 090.81 Ft"
+    },   
+    {
+       "date": "2020/06/05",
+       "consumption": "6.5 kWh",
+       "energy": "31.1 kVArh",
+       "runTime": 20,
+       "stopped": "-",
+       "maxOutput": "448.4 kW",
+       "production": "2363 kWh",
+       "income": "51 570.10 Ft"
+    },   
+    {
+       "date": "2020/06/06",
+       "consumption": "10.4 kWh",
+       "energy": "46.6 kVArh",
+       "runTime": 17,
+       "stopped": "-",
+       "maxOutput": "468.8 kW",
+       "production": "2798 kWh",
+       "income": "96 646.93 Ft"
+    },   
+    {
+       "date": "2020/06/07",
+       "consumption": "7.4 kWh",
+       "energy": "31.2 kVArh",
+       "runTime": 14,
+       "stopped": "-",
+       "maxOutput": "408.6 kW",
+       "production": "1949 kWh",
+       "income": "77 678.70 Ft"
+    },   
+    {
+       "date": "2020/06/08",
+       "consumption": "11.4 kWh",
+       "energy": "31.4 kVArh",
+       "runTime": 9,
+       "stopped": "-",
+       "maxOutput": "495/0 kW",
+       "production": "2920 kWh",
+       "income": "45 697.89 Ft"
+    },   
+    {
+       "date": "2020/06/09",
+       "consumption": "6.7 kWh",
+       "energy": "26.5 kVArh",
+       "runTime": 14,
+       "stopped": "-",
+       "maxOutput": "420.7 kW",
+       "production": "2812 kWh",
+       "income": "56 033.31 Ft"
+    },   
+    {
+       "date": "2020/06.10",
+       "consumption": "6.6 kWh",
+       "energy": "26.9 kVArh",
+       "runTime": 20,
+       "stopped": "-",
+       "maxOutput": "414.7 kW",
+       "production": "1377 kWh",
+       "income": "95 888.28 Ft"
+    }
+ ]
+ 
+ 

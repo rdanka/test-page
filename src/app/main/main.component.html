@@ -1,0 +1,5 @@
+<app-filter (dateEvent)="chart.getDate($event); receiveMessage($event)"  [newDate]="day" (dateEvent)="table.getPeriod($event)" #filter></app-filter>
+<app-chart [type]="charType" [date]="day" (click)="filter.getDate()" #chart></app-chart>
+<app-data-table #table></app-data-table>  
+
+

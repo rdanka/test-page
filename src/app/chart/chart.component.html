@@ -1,0 +1,13 @@
+<mat-card class="card" (mouseenter)="refresh()">
+  <h1>Napi termelési adatok (kWh)</h1>
+  <div>
+    <highcharts-chart id="container" [Highcharts]="Highcharts" [options]="chartOptions"
+      style="width: 100%; height: 400px; display: block;">
+    </highcharts-chart>
+
+    <div class="buttons">
+      <button mat-button (click)="previousDate()">&#9666;Előző</button>
+      <button mat-button (click)="nextDate()">Következő&#9656;</button>
+    </div>
+  </div>
+</mat-card>
